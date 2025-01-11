@@ -1,0 +1,71 @@
+/* Education Section */
+#education {
+  padding-top: 100px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+#education .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Center the content */
+}
+
+#education h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.container ul {
+  padding: 0;
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+}
+
+.container ul li {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.container ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #4CAF50; /* Green circle as bullet */
+  border-radius: 50%;
+}
+
+.container ul li:hover {
+  color: #333;
+  transform: translateX(10px); /* Add subtle slide effect */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+.container ul li:hover::before {
+  background-color: #FF5733; /* Change the bullet color on hover */
+}
+
+@media (max-width: 768px) {
+  #education .container {
+    padding: 15px;
+  }
+
+  #education h2 {
+    font-size: 1.5rem; /* Adjust title font size on smaller screens */
+  }
+
+  .container ul li {
+    font-size: 1rem; /* Adjust font size on smaller screens */
+  }
+}

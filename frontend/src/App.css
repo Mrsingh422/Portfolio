@@ -1,0 +1,99 @@
+/* src/App.css */
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Section styles */
+section {
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Media query for screens up to 600px */
+@media (max-width: 600px) {
+  .container, .name, .photo, .project-div, .form-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .line1, .line2, .line4 {
+    font-size: 1.5rem; 
+  }
+  .name, .photo {
+    width: 100%;
+  }
+
+  .photo img {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+   .line1, .line2, .line4 {
+    font-size: 1.6rem; 
+  }
+  nav {
+    flex-direction: column;
+  }
+
+
+  nav ul {
+    display: none; /* Hide the navbar links */
+  }
+
+  /* The menu button is already handled in Header.css */
+
+  /* Style adjustments for single-column layout in home section */
+  #home .container {
+    flex-direction: column;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  .photo img {
+    width: 100%;
+  }
+}
+
+/* Media query for screens up to 920px */
+@media (max-width: 920px) {
+  /* Adjustments for slightly larger screens can go here */
+}
+
+/* Additional styles can be added here */

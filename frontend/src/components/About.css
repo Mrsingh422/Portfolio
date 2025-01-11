@@ -1,0 +1,12 @@
+/* src/components/About.css */
+
+/* About me section */
+#about .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container p.about {
+    padding: 50px 0;
+  }
+  

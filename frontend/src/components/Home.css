@@ -1,0 +1,197 @@
+/* src/components/Home.css */
+
+/* Home section */
+#home .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  
+  .name {
+    font-size: 2rem;
+    width: 70%;
+    padding: 30px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .name1, .name2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .photo {
+    width: 30%;
+  }
+  
+  .photo img {
+    width: 80%;
+    padding: 30px 0;
+  }
+  
+  .gray {
+    color: cadetblue;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .line3 {
+    color: red;
+  }
+  
+  .line1, .line2 {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  .line1 {
+    word-wrap: break-word;
+    animation: typing1 4s steps(30) 1, blink-caret 0.3s step-end 10;
+    animation-timing-function: ease-in-out;
+    font-size: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  
+  .line2 {
+    animation: typing2 4s steps(30) 1, blink-caret2 0.3s step-end 5;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    word-wrap: break-word;
+    animation-fill-mode: both;
+    animation-fill-mode: backwards;
+  }
+  
+  p.line4 {
+    background-color: white;
+    overflow: hidden;
+    display: block;
+    width: 0;
+    white-space: nowrap;
+    animation: typing2 4s steps(30) 1, blink-caret 0.3s step-end 5;
+    animation-timing-function: ease-in-out;
+    animation-delay: 7s;
+    word-wrap: break-word;
+    animation-fill-mode: forwards;
+  }
+  
+  .line4-div {
+    position: absolute;
+    align-items: center;
+  }
+  
+  /* Animations */
+  @keyframes typing1 {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes typing2 {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-right: 2px solid transparent; }
+    50% { border-right: 2px solid #c0c0c0; }
+  }
+  
+  @keyframes blink-caret2 {
+    from, to { border-right: 2px solid transparent; }
+    10% { border-right: 2px solid #c0c0c0; width:10%; }
+  }
+  
+  /* Media queries can be kept in App.css or respective component CSS files */
+  /* For phones (up to 600px) */
+@media screen and (max-width: 600px) {
+  #home .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 1rem; /* Smaller font size */
+    width: 100%; /* Full width */
+    padding: 20px 0;
+  }
+
+  .photo {
+    width: 60%; /* Reduce image width */
+  }
+
+  .photo img {
+    width: 100%; /* Full image width */
+    padding: 10px 0;
+  }
+
+  .line1, .line2, .line4 {
+    font-size: 1.5rem; /* Smaller text */
+  }
+}
+
+/* For tablets (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #home .container {
+    flex-direction: row; /* Keep row direction */
+    justify-content: space-around;
+  }
+  .line1 {
+    font-size: 40px;
+  }
+
+  .name {
+    font-size: 1.2rem; /* Adjust font size */
+    width: 60%; /* Slightly smaller width */
+    padding: 20px;
+  }
+
+  .photo {
+    width: 30%; /* Adjust image container width */
+  }
+
+  .photo img {
+    width: 70%; /* Slightly smaller image */
+    padding: 20px 0;
+  }
+
+  .line1, .line2, .line4 {
+    font-size: 1rem; /* Medium font size */
+  }
+}
+
+/* For laptops (1025px to 1440px) */
+@media screen and (min-width: 768px) and (max-width: 1240px) {
+  #home .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+
+  .name {
+    font-size: 2rem; /* Maintain font size */
+    width: 70%; /* Adjust width */
+    padding: 30px 0;
+  }
+
+  .photo {
+    width: 30%; /* Standard width */
+  }
+
+  .photo img {
+    width: 80%; /* Standard image size */
+    padding: 30px 0;
+  }
+
+  .line1, .line2, .line4 {
+    font-size: 2.5rem; /* Slightly larger font */
+  }
+}

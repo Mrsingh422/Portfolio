@@ -1,0 +1,91 @@
+/* Projects Section */
+#projects {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+
+.project-div {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  color: aqua;
+}
+
+.project {
+  background-color: rgba(88, 88, 88, 0.7); /* Semi-transparent white background to show logo behind */
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  position: relative; /* Needed for positioning the language tag */
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0.9;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  color: #c00000f1;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.project p {
+  padding: 10px 0;
+  color: #0e0e0e;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project a {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.project a:hover {
+  background-color: #0056b3;
+}
+
+/* Language Tag Styling */
+.language-tag {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.project::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* Inherit the background from the parent */
+  filter: blur(5px); /* Adjust the blur radius as needed */
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}

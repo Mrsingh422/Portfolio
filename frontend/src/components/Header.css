@@ -1,0 +1,98 @@
+/* src/components/Header.css */
+
+/* Navigation styles */
+header {
+    height: 95px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+  
+  .logo img {
+    width: 260px;
+    background-color: #ddd;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background: #444;
+    border-radius: 5px;
+  }
+  
+  nav ul li a:active {
+    transform: translateY(10px);
+  }
+  
+  /* Responsive Menu Button */
+  .menu-btn {
+    display: none;
+  }
+  
+  /* Show the menu button on screens up to 768px */
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: block;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  
+    /* Hide the navigation menu initially */
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      width: 100%;
+      position: absolute;
+      top: 95px; /* Matches header height */
+      left: 0;
+      z-index: 10;
+    }
+  
+    /* Show the navigation menu when active */
+    nav ul.active {
+      display: flex;
+    }
+  
+    /* Adjust the list items in the navbar */
+    nav ul li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    nav ul li a {
+      padding: 10px 0;
+    }
+  }
+  
