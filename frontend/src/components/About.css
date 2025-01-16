@@ -1,12 +1,26 @@
 /* src/components/About.css */
 
+/* #about {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Background_coders.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 50px;
+  } */
 /* About me section */
 #about .container {
     display: flex;
     flex-direction: column;
+
+
+
+    
   }
   
   .container p.about {
-    padding: 50px 0;
+    padding: 50px 0 10px 0;
   }
+
+
   

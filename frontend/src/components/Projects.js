@@ -8,21 +8,21 @@ function Projects() {
       description: 'A task management app to keep track of your tasks.', 
       link: 'https://mrsingh422.netlify.app/', 
       logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/Ferramentas_de_organiza%C3%A7%C3%A3o_e_produtividade.png',
-      language: 'HTML, CSS, JavaScript' 
+      language: 'React.js' 
     },
     { 
       title: 'Weather App', 
       description: 'An app to display real-time weather information for your location.', 
       link: 'https://mrsingh422.netlify.app/', 
       logo: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Weather_forecast_and_warning.jpg',
-      language: 'JavaScript, React' 
+      language: 'React.js' 
     },
     { 
       title: 'Portfolio', 
       description: 'My personal portfolio showcasing my skills and projects.', 
       link: 'https://mrsingh422.netlify.app/', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
-      language: 'React, CSS' 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png',
+      language: 'react+node js' 
     },
   ];
 

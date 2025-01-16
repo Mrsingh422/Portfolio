@@ -17,6 +17,9 @@ const skillLogos = {
   'MERN': 'https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png',
   'Tailwind CSS': 'https://upload.wikimedia.org/wikipedia/commons/9/95/Tailwind_CSS_logo.svg',
   'Figma': 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg',
+  'Netlify': 'https://upload.wikimedia.org/wikipedia/commons/9/97/Netlify_logo_%282%29.svg',
+  'Bootstrap': 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg',
+  'Photoshop': 'https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg',
 
 
 };
@@ -24,7 +27,7 @@ const skillLogos = {
 function Skills() {
   const skills = [
     'HTML5', 'CSS3', 'JavaScript', 'React Js', 'Node.js',
-    'MongoDB', 'Express Js', 'JQuery', 'Typing-35wpm', 'MySQL', 'Redux', 'MERN', 'Tailwind CSS','Figma'
+    'MongoDB', 'Express Js', 'JQuery', 'Typing-35wpm', 'MySQL', 'Redux', 'MERN', 'Tailwind CSS','Figma','Netlify','Bootstrap','Photoshop'
   ];
 
   return (

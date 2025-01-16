@@ -1,6 +1,15 @@
 /* Skills Section */
 #skills {
   padding-top: 100px;
+
+  /* baclground image */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Background_coders.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 50px;
+  
 }
 
 #skills .container {
@@ -30,8 +39,8 @@
 }
 
 .skill-logo {
-  width: 50px; /* Adjust logo size */
-  height: 50px;
+  width: 100px; /* Adjust logo size */
+  height: 70px;
   margin-bottom: 10px;
   object-fit: contain; /* Ensures the logo doesn't stretch */
   transition: transform 0.3s ease; /* Smooth scaling transition */
