@@ -4,16 +4,16 @@ import './Projects.css'; // Create a separate CSS file for Projects styles
 function Projects() {
   const projects = [
     { 
-      title: 'Todo-list', 
-      description: 'A task management app to keep track of your tasks.', 
-      link: 'https://mrsingh422.netlify.app/', 
+      title: 'Tik-Tak-Toe', 
+      description: 'A game for two players, X and O, who take turns marking the spaces in a 3x3 grid.', 
+      link: 'https://mrsingh-tik-tak-toe.netlify.app/', 
       logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/Ferramentas_de_organiza%C3%A7%C3%A3o_e_produtividade.png',
       language: 'React.js' 
     },
     { 
       title: 'Weather App', 
       description: 'An app to display real-time weather information for your location.', 
-      link: 'https://mrsingh422.netlify.app/', 
+      link: 'https://mrsingh-weather.netlify.app/', 
       logo: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Weather_forecast_and_warning.jpg',
       language: 'React.js' 
     },
@@ -22,7 +22,7 @@ function Projects() {
       description: 'My personal portfolio showcasing my skills and projects.', 
       link: 'https://mrsingh422.netlify.app/', 
       logo: 'https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png',
-      language: 'react+node js' 
+      language: 'react.js+node.js' 
     },
   ];
 
