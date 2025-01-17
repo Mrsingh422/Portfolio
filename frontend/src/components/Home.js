@@ -22,47 +22,9 @@ function Home() {
       bubble.style.animationDelay = `${Math.random() * 5}s`; // Staggered start
     }
 
-    // Handle mouse movement
-    const handleMouseMove = (e) => {
-      const { clientX, clientY } = e;
-
-      bubbles.forEach((bubble) => {
-        const rect = bubble.getBoundingClientRect();
-        const bubbleX = rect.left + rect.width / 2;
-        const bubbleY = rect.top + rect.height / 2;
-
-        const distance = Math.sqrt(
-          Math.pow(clientX - bubbleX, 2) + Math.pow(clientY - bubbleY, 2)
-        );
-
-        // Check if the bubble is within a certain radius of the cursor
-        if (distance < 100) {
-          bubble.style.transition = 'transform 0.1s ease-out';
-          bubble.style.transform = `translate(${clientX - bubbleX}px, ${clientY - bubbleY}px)`;
-        } else {
-          bubble.style.transition = 'transform 0.5s ease-in-out';
-          bubble.style.transform = '';
-        }
-      });
-    };
-
-    // Reset bubbles to floating state when mouse leaves
-    const handleMouseLeave = () => {
-      bubbles.forEach((bubble) => {
-        bubble.style.transition = 'transform 0.5s ease-in-out';
-        bubble.style.transform = ''; // Reset position
-      });
-    };
-
-    // Event listeners
-    homeSection.addEventListener('mousemove', handleMouseMove);
-    homeSection.addEventListener('mouseleave', handleMouseLeave);
-
     // Cleanup on component unmount
     return () => {
       bubbles.forEach((bubble) => bubble.remove());
-      homeSection.removeEventListener('mousemove', handleMouseMove);
-      homeSection.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
 

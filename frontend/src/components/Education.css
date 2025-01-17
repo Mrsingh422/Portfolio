@@ -2,6 +2,12 @@
 #education {
   padding-top: 100px;
   background-color: #f9f9f9; /* Light background for contrast */
+
+  
+
+   /* baclground image */
+   background: linear-gradient(120deg, #1e1e2f, #282c34);
+  color: #dbdbdb !important; 
 }
 
 #education .container {
@@ -14,7 +20,7 @@
 #education h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  /* color: #333; */
   margin-bottom: 30px;
   text-transform: uppercase;
 }
@@ -29,7 +35,7 @@
   position: relative;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #555;
+  /* color: #555; */
   padding-left: 30px;
   margin-bottom: 15px;
 }

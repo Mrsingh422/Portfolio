@@ -3,12 +3,8 @@
   padding-top: 100px;
 
   /* baclground image */
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Background_coders.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    padding-top: 50px;
+  background: linear-gradient(120deg, #1e1e2f, #282c34);
+    color: #dbdbdb;
   
 }
 
@@ -47,7 +43,7 @@
 }
 
 .skill:hover .skill-logo {
-  animation: rotateLogo 0.3s infinite linear; /* Faster continuous rotation */
+  animation: rotateLogo 0.3s linear infinite; /* Faster continuous rotation */
   transform: scale(2); /* Double the size of the logo on hover */
 }
 

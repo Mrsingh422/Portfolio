@@ -7,7 +7,7 @@ function Projects() {
       title: 'Tik-Tak-Toe', 
       description: 'A game for two players, X and O, who take turns marking the spaces in a 3x3 grid.', 
       link: 'https://mrsingh-tik-tak-toe.netlify.app/', 
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/Ferramentas_de_organiza%C3%A7%C3%A3o_e_produtividade.png',
+      logo: 'https://i.fbcd.co/products/original/1-3504980467241cebf586a35a81e40beb253415716c06f3e3b5dc984a53926179.jpg',
       language: 'React.js' 
     },
     { 

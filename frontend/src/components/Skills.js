@@ -20,6 +20,11 @@ const skillLogos = {
   'Netlify': 'https://upload.wikimedia.org/wikipedia/commons/9/97/Netlify_logo_%282%29.svg',
   'Bootstrap': 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg',
   'Photoshop': 'https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg',
+  'AutoCad': 'https://vectorseek.com/wp-content/uploads/2023/09/Autodesk-AutoCAD-2014-Logo-Vector.svg-.png',
+  'Revit': 'https://cdn.freelogovectors.net/wp-content/uploads/2023/05/revit-logo-freelogovectors.net_.png',
+  'Next js': 'https://image.pngaaa.com/401/7820401-middle.png',
+  'Three js': 'https://core.network/wp-content/uploads/2018/06/ThreeJS-Icon-300x300.png',
+  'Vue js': 'https://dwglogo.com/wp-content/uploads/2017/09/Vue-logo-001.svg',
 
 
 };
@@ -27,7 +32,7 @@ const skillLogos = {
 function Skills() {
   const skills = [
     'HTML5', 'CSS3', 'JavaScript', 'React Js', 'Node.js',
-    'MongoDB', 'Express Js', 'JQuery', 'Typing-35wpm', 'MySQL', 'Redux', 'MERN', 'Tailwind CSS','Figma','Netlify','Bootstrap','Photoshop'
+    'MongoDB', 'Express Js', 'JQuery', 'Typing-35wpm', 'MySQL', 'Redux', 'MERN', 'Tailwind CSS','Figma','Netlify','Bootstrap','Photoshop','AutoCad','Revit','Next js','Three js','Vue js'
   ];
 
   return (
